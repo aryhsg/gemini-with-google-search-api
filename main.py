@@ -9,7 +9,7 @@ import dotenv
 dotenv.load_dotenv()
 
 # 2. 初始化 Gemini Client
-GEMINI_API_KEY = "AIzaSyA05ZgKwCFAQ7dKSsdTY3uYspmQo3HdKdU"
+GEMINI_API_KEY = os.environ.get("API_KEY")
 
 if not GEMINI_API_KEY:
     # 如果找不到金鑰，拋出錯誤，讓應用程式啟動失敗
