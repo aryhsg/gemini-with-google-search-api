@@ -57,6 +57,7 @@ def generate_grounded_content(keyword: str) -> dict:
         f"請針對關鍵字『{keyword}』，搜尋並總結其最近一個月內最相關的新聞與事件，**最多十筆**。"
         f"**只回傳新聞標題**，並將標題整理成一個Markdown格式的列表。"
         f"**格式要求**：以下是關於'關鍵字'近一個月的相關新聞：\n\n*標題\n*標題\n*標題\n"
+        f"**務必讓輸出的'output中的response內的新聞標題數，與source內的uri總數相同，例如：response內共有10條新聞標題，那麼source內就要剛好10個uri**"
     )
     
     # --- 關鍵設定 ---
